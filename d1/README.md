@@ -64,11 +64,35 @@
              - Does the same thing as Session Storage, excepts persists even when the browser is closed and reopened
              - No expiration date and only gets cleared through JS, or clearing the browser cache / locally stored data
              - Maximum storage of all options
+<br>
+<br>
+<br>
 
+3. ## Use the Window API to change the innerHeight of a user's window.
+   - [Code](./window-lo-3.js)
+<br>
+<br>
+<br>
 
+4. ## Identify the context of anonymous functions running in the browser.
+    - The Window Object:
+      - Represents an open window in a browser
+      - The global object in the browser
+      - The root of the DOM (contains document property used to reference DOM)
+      - **Show in Browser**
+<br>
+<br>
+<br>
+ 
 
-1. Use the Window API to change the innerHeight of a user's window.
-2. Identify the context of anonymous functions running in the browser (the window).
-3. Given a JS file and an HTML file, use a script tag to import the JS file and execute the code therein when all the elements on the page load.
-4. Explain the browser's main role in the request/response cycle.
-5. Identify, examine, and delete cookies for a given website using the Chrome Developer Tools.
+5. ## Given a JS file and an HTML file, use a script tag to import the JS file and execute the code therein when all the elements on the page load.
+   - [HTML](./import-loading-lo-5.js/index.html)
+   - [JS](./import-loading-lo-5.js/index.js)
+
+<br>
+<br>
+<br>
+ 
+
+1. Explain the browser's main role in the request/response cycle.
+2. Identify, examine, and delete cookies for a given website using the Chrome Developer Tools.
