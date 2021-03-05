@@ -60,3 +60,36 @@ console.log(ourULChildren);
 // Alternative
 // const ourLIs = document.querySelectorAll('#your-best-friend>li');
 // console.log(ourLIs);
+
+/***********************************************************************
+ * #8 - Given an HTML file with a UL element with the id "your-worst-enemy" that has no children, write JavaScript to construct a string that contains six LI tags each containing a random number and set the inner HTML property of ul#your-worst-enemy to that string.
+ ***********************************************************************/
+function generateRandom(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+let yourWorstEnemyUL = document.getElementById('your-worst-enemy');
+
+const myListItems = [
+  `<li>${generateRandom(100)}</li>`,
+  `<li>${generateRandom(100)}</li>`,
+  `<li>${generateRandom(100)}</li>`,
+  `<li>${generateRandom(100)}</li>`,
+  `<li>${generateRandom(100)}</li>`,
+  `<li>${generateRandom(100)}</li>`,
+];
+
+yourWorstEnemyUL.innerHTML = myListItems.join(' ');
+
+/***********************************************************************
+ * #9 - Write JavaScript to update the title of the document to the current time at a reasonable interval such that it looks like a real clock.
+ ***********************************************************************/
+function setTime() {
+  const currentDate = new Date();
+  const hours = currentDate.getHours();
+  const minutes = currentDate.getMinutes();
+  const seconds = currentDate.getSeconds();
+  document.title = `${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(setTime, 1000);
