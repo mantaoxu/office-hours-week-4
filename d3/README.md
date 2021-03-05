@@ -1,4 +1,6 @@
 # Learning Objectives - Event Handling
+[JS](index.js)
+[HTML](index.html)
 
 1. ## Given an HTML page that includes <button id="increment-count">I have been clicked <span id="clicked-count">0</span> times</button>, write JavaScript that increases the value of the content of span#clicked-count by 1 every time button#increment-count is clicked.
 
@@ -16,3 +18,5 @@
 7. ## Given an HTML page that has 300 DIVs, create one click event subscription that will print the id of the element clicked on to the console.
 
 8. ## Identify the definition of the bubbling principle.
+   - When an event happens on an element, it first runs the handlers on it, then on it's parent, then all the way up on the other ancestors
+   - ![Bubbling and Capturing](../images/bubbling-and-capturing.png)

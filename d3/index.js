@@ -45,3 +45,26 @@ fancyInput.addEventListener('focusin', (event) => {
 fancyInput.addEventListener('focusout', (event) => {
   fancyInput.style.backgroundColor = 'initial';
 });
+
+/*******************************************************************************
+   #05 - Given an HTML page that includes a form with two password fields, write JavaScript that subscribes to the forms submission event and cancels it if the values in the two password fields differ.
+ ******************************************************************************/
+const form = document.getElementById('my-form');
+
+form.addEventListener('submit', (event) => {
+  const password = document.getElementById('my-form-password').value;
+  const passwordConfirm = document.getElementById('my-form-password-confirm')
+    .value;
+
+  if (password !== passwordConfirm) {
+    event.preventDefault();
+    alert('Passwords must match!');
+  }
+});
+
+/*******************************************************************************
+   #07 - Given an HTML page that has 300 DIVs, create one click event subscription that will print the id of the element clicked on to the console
+ ******************************************************************************/
+document.addEventListener('click', (event) => {
+  event.target.id ? console.log(event.target.id) : '';
+});
