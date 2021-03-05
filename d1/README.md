@@ -94,5 +94,26 @@
 <br>
  
 
-1. Explain the browser's main role in the request/response cycle.
-2. Identify, examine, and delete cookies for a given website using the Chrome Developer Tools.
+6. ## Explain the browser's main role in the request/response cycle.
+   - The browser's main role is client-side interaction with the web through a series of requests and responses to servers.
+     - **Request**:
+       - Going to a file path in the browser makes a GET request for file
+       - Navigating to a webpage in the browser makes a GET request for webpage
+     - **Response**:
+       - What we expect to receive back from a request
+    - Parses HTML, CSS, and JS
+    - Constructs and renders a DOM tree for the user(client)
+  
+7. ## Identify, examine, and delete cookies for a given website using the Chrome Developer Tools.
+   1. Opens Chromes DevTools:
+     - macOS shortcuts:
+       - Option + ⌘ + J
+       - Possibly F12
+     - Windows shortcuts:
+       - Shift + CTRL + J
+       - Shift + CTRL + I
+       - F12
+   2. Navigate to `Application` tab
+   3. Click `Cookies`
+
+   - [Creating, Modifying, and Deleting Cookies in JavaScript](./cookies-lo-7.js/index.js)
