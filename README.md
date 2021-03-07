@@ -3,6 +3,7 @@
 - ## Practice Assessment
   
   - [README](./prac-assessment/README.md)
+  - [HTML](./prac-assessment/index.html)
   - [Code](./prac-assessment/your-code.js)
 
 - ## Day 1 Learning Objectives
